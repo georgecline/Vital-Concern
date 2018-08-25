@@ -15,6 +15,8 @@
 		3F0B284A21153A980012FA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0B284821153A980012FA94 /* LaunchScreen.storyboard */; };
 		3F0B285521153A980012FA94 /* Vital_ConcernTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B285421153A980012FA94 /* Vital_ConcernTests.swift */; };
 		3F0B286021153A980012FA94 /* Vital_ConcernUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B285F21153A980012FA94 /* Vital_ConcernUITests.swift */; };
+		3F0B28C42125D7870012FA94 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B28C32125D7870012FA94 /* CheckBox.swift */; };
+		3F955836212AF16700D75350 /* checked_checkbox.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 3F955835212AF16700D75350 /* checked_checkbox.imageset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		3F0B285B21153A980012FA94 /* Vital ConcernUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vital ConcernUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0B285F21153A980012FA94 /* Vital_ConcernUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vital_ConcernUITests.swift; sourceTree = "<group>"; };
 		3F0B286121153A980012FA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0B286E2115E13D0012FA94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3F0B28C32125D7870012FA94 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		3F955835212AF16700D75350 /* checked_checkbox.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = checked_checkbox.imageset; path = Assets.xcassets/checked_checkbox.imageset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +106,10 @@
 			children = (
 				3F0B283C21153A920012FA94 /* AppDelegate.swift */,
 				3F0B283E21153A920012FA94 /* ViewController.swift */,
+				3F0B28C32125D7870012FA94 /* CheckBox.swift */,
 				3F0B284021153A920012FA94 /* Main.storyboard */,
 				3F0B284621153A980012FA94 /* Assets.xcassets */,
+				3F955835212AF16700D75350 /* checked_checkbox.imageset */,
 				3F0B284821153A980012FA94 /* LaunchScreen.storyboard */,
 				3F0B284B21153A980012FA94 /* Info.plist */,
 				3F0B284321153A920012FA94 /* Vital_Concern.xcdatamodeld */,
@@ -235,6 +242,7 @@
 				3F0B284A21153A980012FA94 /* LaunchScreen.storyboard in Resources */,
 				3F0B284721153A980012FA94 /* Assets.xcassets in Resources */,
 				3F0B284221153A920012FA94 /* Main.storyboard in Resources */,
+				3F955836212AF16700D75350 /* checked_checkbox.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0B28C42125D7870012FA94 /* CheckBox.swift in Sources */,
 				3F0B283F21153A920012FA94 /* ViewController.swift in Sources */,
 				3F0B284521153A920012FA94 /* Vital_Concern.xcdatamodeld in Sources */,
 				3F0B283D21153A920012FA94 /* AppDelegate.swift in Sources */,
@@ -301,6 +310,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F0B284121153A920012FA94 /* Base */,
+				3F0B286E2115E13D0012FA94 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -435,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T472CJ32AF;
 				INFOPLIST_FILE = "Vital Concern/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T472CJ32AF;
 				INFOPLIST_FILE = "Vital Concern/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
