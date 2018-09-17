@@ -17,6 +17,27 @@
 		3F0B286021153A980012FA94 /* Vital_ConcernUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B285F21153A980012FA94 /* Vital_ConcernUITests.swift */; };
 		3F0B28C42125D7870012FA94 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B28C32125D7870012FA94 /* CheckBox.swift */; };
 		3F955836212AF16700D75350 /* checked_checkbox.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 3F955835212AF16700D75350 /* checked_checkbox.imageset */; };
+		9200F1A12143E27600E77A34 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200F1A02143E27600E77A34 /* LogOutViewController.swift */; };
+		921C631A214C20F100143EC0 /* HelpReqsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C6319214C20F100143EC0 /* HelpReqsTableViewController.swift */; };
+		921C631C214C212F00143EC0 /* HelpReqsDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C631B214C212F00143EC0 /* HelpReqsDetViewController.swift */; };
+		921C631E214C216400143EC0 /* HelpReqsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C631D214C216400143EC0 /* HelpReqsTableViewCell.swift */; };
+		921C6320214C219D00143EC0 /* AnnounceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C631F214C219D00143EC0 /* AnnounceTableViewCell.swift */; };
+		921C6322214C21CD00143EC0 /* AnnounceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C6321214C21CD00143EC0 /* AnnounceTableViewController.swift */; };
+		921C6324214C220900143EC0 /* AnnounceDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C6323214C220900143EC0 /* AnnounceDetViewController.swift */; };
+		922168F4214F065A008753A8 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */; };
+		922168F8214F25B0008753A8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */; };
+		92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2221402A9100CBBC89 /* KeychainWrapper.swift */; };
+		92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */; };
+		927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */; };
+		92B308BB214BB2C600A5E996 /* PrayerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */; };
+		92B308BD214BCC4E00A5E996 /* PrayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */; };
+		92B308BF214BD32200A5E996 /* PrayerListDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BE214BD32200A5E996 /* PrayerListDetViewController.swift */; };
+		92DF7A362146894800CE56F5 /* AllReqsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DF7A352146894800CE56F5 /* AllReqsTableViewCell.swift */; };
+		92DF7A3821468DD100CE56F5 /* AllReqsDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DF7A3721468DD100CE56F5 /* AllReqsDetViewController.swift */; };
+		92EF141C2143555200BF780C /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF141B2143555200BF780C /* AllRequestsViewController.swift */; };
+		92F78072213DC71C007C3AE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F78071213DC71C007C3AE6 /* LoginViewController.swift */; };
+		92F78074213DCC70007C3AE6 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F78073213DCC70007C3AE6 /* StartPageViewController.swift */; };
+		92FBCA98214FCF2C00976A17 /* TermsUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +75,27 @@
 		3F0B286E2115E13D0012FA94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3F0B28C32125D7870012FA94 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3F955835212AF16700D75350 /* checked_checkbox.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = checked_checkbox.imageset; path = Assets.xcassets/checked_checkbox.imageset; sourceTree = "<group>"; };
+		9200F1A02143E27600E77A34 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		921C6319214C20F100143EC0 /* HelpReqsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpReqsTableViewController.swift; sourceTree = "<group>"; };
+		921C631B214C212F00143EC0 /* HelpReqsDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpReqsDetViewController.swift; sourceTree = "<group>"; };
+		921C631D214C216400143EC0 /* HelpReqsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpReqsTableViewCell.swift; sourceTree = "<group>"; };
+		921C631F214C219D00143EC0 /* AnnounceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceTableViewCell.swift; sourceTree = "<group>"; };
+		921C6321214C21CD00143EC0 /* AnnounceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceTableViewController.swift; sourceTree = "<group>"; };
+		921C6323214C220900143EC0 /* AnnounceDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceDetViewController.swift; sourceTree = "<group>"; };
+		922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		92774E2221402A9100CBBC89 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-back-arrow-48.png"; path = "../../../Downloads/icons8-back-arrow-48.png"; sourceTree = "<group>"; };
+		92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewController.swift; sourceTree = "<group>"; };
+		92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewCell.swift; sourceTree = "<group>"; };
+		92B308BE214BD32200A5E996 /* PrayerListDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListDetViewController.swift; sourceTree = "<group>"; };
+		92DF7A352146894800CE56F5 /* AllReqsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllReqsTableViewCell.swift; sourceTree = "<group>"; };
+		92DF7A3721468DD100CE56F5 /* AllReqsDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllReqsDetViewController.swift; sourceTree = "<group>"; };
+		92EF141B2143555200BF780C /* AllRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
+		92F78071213DC71C007C3AE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		92F78073213DCC70007C3AE6 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
+		92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsUseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +151,31 @@
 				3F0B28C32125D7870012FA94 /* CheckBox.swift */,
 				3F0B284021153A920012FA94 /* Main.storyboard */,
 				3F0B284621153A980012FA94 /* Assets.xcassets */,
+				927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */,
 				3F955835212AF16700D75350 /* checked_checkbox.imageset */,
 				3F0B284821153A980012FA94 /* LaunchScreen.storyboard */,
 				3F0B284B21153A980012FA94 /* Info.plist */,
 				3F0B284321153A920012FA94 /* Vital_Concern.xcdatamodeld */,
+				92F78071213DC71C007C3AE6 /* LoginViewController.swift */,
+				92F78073213DCC70007C3AE6 /* StartPageViewController.swift */,
+				92774E2221402A9100CBBC89 /* KeychainWrapper.swift */,
+				92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */,
+				92EF141B2143555200BF780C /* AllRequestsViewController.swift */,
+				9200F1A02143E27600E77A34 /* LogOutViewController.swift */,
+				92DF7A352146894800CE56F5 /* AllReqsTableViewCell.swift */,
+				92DF7A3721468DD100CE56F5 /* AllReqsDetViewController.swift */,
+				92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */,
+				92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */,
+				92B308BE214BD32200A5E996 /* PrayerListDetViewController.swift */,
+				921C6319214C20F100143EC0 /* HelpReqsTableViewController.swift */,
+				921C631B214C212F00143EC0 /* HelpReqsDetViewController.swift */,
+				921C631D214C216400143EC0 /* HelpReqsTableViewCell.swift */,
+				921C631F214C219D00143EC0 /* AnnounceTableViewCell.swift */,
+				921C6321214C21CD00143EC0 /* AnnounceTableViewController.swift */,
+				921C6323214C220900143EC0 /* AnnounceDetViewController.swift */,
+				922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */,
+				922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */,
+				92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */,
 			);
 			path = "Vital Concern";
 			sourceTree = "<group>";
@@ -242,6 +305,7 @@
 				3F0B284A21153A980012FA94 /* LaunchScreen.storyboard in Resources */,
 				3F0B284721153A980012FA94 /* Assets.xcassets in Resources */,
 				3F0B284221153A920012FA94 /* Main.storyboard in Resources */,
+				927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */,
 				3F955836212AF16700D75350 /* checked_checkbox.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +331,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EF141C2143555200BF780C /* AllRequestsViewController.swift in Sources */,
+				922168F4214F065A008753A8 /* PrivacyPolicyViewController.swift in Sources */,
 				3F0B28C42125D7870012FA94 /* CheckBox.swift in Sources */,
+				921C6322214C21CD00143EC0 /* AnnounceTableViewController.swift in Sources */,
 				3F0B283F21153A920012FA94 /* ViewController.swift in Sources */,
+				92DF7A362146894800CE56F5 /* AllReqsTableViewCell.swift in Sources */,
+				921C6324214C220900143EC0 /* AnnounceDetViewController.swift in Sources */,
 				3F0B284521153A920012FA94 /* Vital_Concern.xcdatamodeld in Sources */,
+				922168F8214F25B0008753A8 /* ForgotPasswordViewController.swift in Sources */,
+				921C631A214C20F100143EC0 /* HelpReqsTableViewController.swift in Sources */,
+				92B308BB214BB2C600A5E996 /* PrayerListTableViewController.swift in Sources */,
+				921C6320214C219D00143EC0 /* AnnounceTableViewCell.swift in Sources */,
+				92B308BF214BD32200A5E996 /* PrayerListDetViewController.swift in Sources */,
+				921C631C214C212F00143EC0 /* HelpReqsDetViewController.swift in Sources */,
+				92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */,
+				92F78072213DC71C007C3AE6 /* LoginViewController.swift in Sources */,
+				92B308BD214BCC4E00A5E996 /* PrayerListTableViewCell.swift in Sources */,
+				92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */,
+				92FBCA98214FCF2C00976A17 /* TermsUseViewController.swift in Sources */,
+				92F78074213DCC70007C3AE6 /* StartPageViewController.swift in Sources */,
+				92DF7A3821468DD100CE56F5 /* AllReqsDetViewController.swift in Sources */,
+				921C631E214C216400143EC0 /* HelpReqsTableViewCell.swift in Sources */,
+				9200F1A12143E27600E77A34 /* LogOutViewController.swift in Sources */,
 				3F0B283D21153A920012FA94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
