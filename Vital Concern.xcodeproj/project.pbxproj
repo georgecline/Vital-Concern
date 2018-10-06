@@ -26,9 +26,16 @@
 		921C6324214C220900143EC0 /* AnnounceDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C6323214C220900143EC0 /* AnnounceDetViewController.swift */; };
 		922168F4214F065A008753A8 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */; };
 		922168F8214F25B0008753A8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */; };
+		9228094F215047130048E129 /* TryTheDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228094E215047130048E129 /* TryTheDemoViewController.swift */; };
+		92331C8B21582B3500FBF73B /* ChangeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92331C8A21582B3500FBF73B /* ChangeSettingsViewController.swift */; };
+		9244F83C215716010057D855 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244F83B215716010057D855 /* ChangePasswordViewController.swift */; };
+		926AE96D2164400700F9BDED /* EditReqsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */; };
+		926AE96F216447D300F9BDED /* EditReqsDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */; };
+		926AE9712164497D00F9BDED /* EditReqsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */; };
 		92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2221402A9100CBBC89 /* KeychainWrapper.swift */; };
 		92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */; };
 		927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */; };
+		928ED2E5215F0CF300163607 /* PostRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928ED2E4215F0CF300163607 /* PostRequestViewController.swift */; };
 		92B308BB214BB2C600A5E996 /* PrayerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */; };
 		92B308BD214BCC4E00A5E996 /* PrayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */; };
 		92B308BF214BD32200A5E996 /* PrayerListDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BE214BD32200A5E996 /* PrayerListDetViewController.swift */; };
@@ -37,6 +44,7 @@
 		92EF141C2143555200BF780C /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF141B2143555200BF780C /* AllRequestsViewController.swift */; };
 		92F78072213DC71C007C3AE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F78071213DC71C007C3AE6 /* LoginViewController.swift */; };
 		92F78074213DCC70007C3AE6 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F78073213DCC70007C3AE6 /* StartPageViewController.swift */; };
+		92F8635321547AF800B5F361 /* SetUpNewChurchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F8635221547AF800B5F361 /* SetUpNewChurchViewController.swift */; };
 		92FBCA98214FCF2C00976A17 /* TermsUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,9 +92,16 @@
 		921C6323214C220900143EC0 /* AnnounceDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceDetViewController.swift; sourceTree = "<group>"; };
 		922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9228094E215047130048E129 /* TryTheDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryTheDemoViewController.swift; sourceTree = "<group>"; };
+		92331C8A21582B3500FBF73B /* ChangeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingsViewController.swift; sourceTree = "<group>"; };
+		9244F83B215716010057D855 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsTableViewController.swift; sourceTree = "<group>"; };
+		926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsDetViewController.swift; sourceTree = "<group>"; };
+		926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsTableViewCell.swift; sourceTree = "<group>"; };
 		92774E2221402A9100CBBC89 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-back-arrow-48.png"; path = "../../../Downloads/icons8-back-arrow-48.png"; sourceTree = "<group>"; };
+		928ED2E4215F0CF300163607 /* PostRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestViewController.swift; sourceTree = "<group>"; };
 		92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewController.swift; sourceTree = "<group>"; };
 		92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewCell.swift; sourceTree = "<group>"; };
 		92B308BE214BD32200A5E996 /* PrayerListDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListDetViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +110,7 @@
 		92EF141B2143555200BF780C /* AllRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
 		92F78071213DC71C007C3AE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92F78073213DCC70007C3AE6 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
+		92F8635221547AF800B5F361 /* SetUpNewChurchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpNewChurchViewController.swift; sourceTree = "<group>"; };
 		92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsUseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +192,14 @@
 				922168F3214F065A008753A8 /* PrivacyPolicyViewController.swift */,
 				922168F7214F25B0008753A8 /* ForgotPasswordViewController.swift */,
 				92FBCA97214FCF2C00976A17 /* TermsUseViewController.swift */,
+				9228094E215047130048E129 /* TryTheDemoViewController.swift */,
+				92F8635221547AF800B5F361 /* SetUpNewChurchViewController.swift */,
+				9244F83B215716010057D855 /* ChangePasswordViewController.swift */,
+				92331C8A21582B3500FBF73B /* ChangeSettingsViewController.swift */,
+				928ED2E4215F0CF300163607 /* PostRequestViewController.swift */,
+				926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */,
+				926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */,
+				926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */,
 			);
 			path = "Vital Concern";
 			sourceTree = "<group>";
@@ -331,9 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928ED2E5215F0CF300163607 /* PostRequestViewController.swift in Sources */,
 				92EF141C2143555200BF780C /* AllRequestsViewController.swift in Sources */,
+				926AE96F216447D300F9BDED /* EditReqsDetViewController.swift in Sources */,
 				922168F4214F065A008753A8 /* PrivacyPolicyViewController.swift in Sources */,
 				3F0B28C42125D7870012FA94 /* CheckBox.swift in Sources */,
+				9228094F215047130048E129 /* TryTheDemoViewController.swift in Sources */,
 				921C6322214C21CD00143EC0 /* AnnounceTableViewController.swift in Sources */,
 				3F0B283F21153A920012FA94 /* ViewController.swift in Sources */,
 				92DF7A362146894800CE56F5 /* AllReqsTableViewCell.swift in Sources */,
@@ -342,18 +369,23 @@
 				922168F8214F25B0008753A8 /* ForgotPasswordViewController.swift in Sources */,
 				921C631A214C20F100143EC0 /* HelpReqsTableViewController.swift in Sources */,
 				92B308BB214BB2C600A5E996 /* PrayerListTableViewController.swift in Sources */,
+				9244F83C215716010057D855 /* ChangePasswordViewController.swift in Sources */,
 				921C6320214C219D00143EC0 /* AnnounceTableViewCell.swift in Sources */,
 				92B308BF214BD32200A5E996 /* PrayerListDetViewController.swift in Sources */,
+				92331C8B21582B3500FBF73B /* ChangeSettingsViewController.swift in Sources */,
 				921C631C214C212F00143EC0 /* HelpReqsDetViewController.swift in Sources */,
+				926AE96D2164400700F9BDED /* EditReqsTableViewController.swift in Sources */,
 				92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */,
 				92F78072213DC71C007C3AE6 /* LoginViewController.swift in Sources */,
 				92B308BD214BCC4E00A5E996 /* PrayerListTableViewCell.swift in Sources */,
 				92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */,
 				92FBCA98214FCF2C00976A17 /* TermsUseViewController.swift in Sources */,
 				92F78074213DCC70007C3AE6 /* StartPageViewController.swift in Sources */,
+				926AE9712164497D00F9BDED /* EditReqsTableViewCell.swift in Sources */,
 				92DF7A3821468DD100CE56F5 /* AllReqsDetViewController.swift in Sources */,
 				921C631E214C216400143EC0 /* HelpReqsTableViewCell.swift in Sources */,
 				9200F1A12143E27600E77A34 /* LogOutViewController.swift in Sources */,
+				92F8635321547AF800B5F361 /* SetUpNewChurchViewController.swift in Sources */,
 				3F0B283D21153A920012FA94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

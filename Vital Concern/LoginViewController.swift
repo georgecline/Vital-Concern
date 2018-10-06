@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet var AgreeCheckbox: CheckBox!
+
     
     @IBOutlet weak var emailaddressTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!

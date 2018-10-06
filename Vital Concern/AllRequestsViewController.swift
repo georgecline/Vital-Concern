@@ -24,6 +24,7 @@ struct jsonstruct:Decodable {
     let Details:String
     let concern:String
     let name:String
+
 //    let fulldetail:String
     
 }
@@ -107,7 +108,7 @@ struct jsonstruct:Decodable {
                     
                 
                 for mainarr in self.arrdata{
-                    print(mainarr.requestfor,":",mainarr.Issue,":",mainarr.name)
+        //            print(mainarr.requestfor,":",mainarr.Issue,":",mainarr.name)
                     DispatchQueue.main.async {
                         self.allreqsTableView.reloadData()
                     }
