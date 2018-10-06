@@ -22,7 +22,7 @@ class AnnounceDetViewController: UIViewController {
         self.fulldetail.text = strfulldetail
         
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view....
     }
 
     override func didReceiveMemoryWarning() {

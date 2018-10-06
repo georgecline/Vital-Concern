@@ -117,7 +117,7 @@ self.navigationItem.title = "Prayer List"
         
         
         
-        // Uncomment the following line to preserve selection between presentations
+        // Uncomment the following line to preserve selection between presentations....
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.

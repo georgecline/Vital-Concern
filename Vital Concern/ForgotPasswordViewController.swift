@@ -116,7 +116,7 @@ class ForgotPasswordViewController: UIViewController {
                 
 
                 
-                //Display an Alert dialog with a friendly error message
+                //Display an Alert dialog with a friendly error message...
                 self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
                 print(error)
             }

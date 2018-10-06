@@ -345,7 +345,7 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
                     
                         
                         
-                        // Display an Alert dialog with a friendly error message
+                        // Display an Alert dialog with a friendly error message...
                     //    self.displayMessage(userMessage: "Your settings were successfully updated.")
                         return
                         

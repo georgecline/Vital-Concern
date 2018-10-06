@@ -760,8 +760,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYD-5l-XlV">
-                                <rect key="frame" x="146" y="309" width="122" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="142.66666666666666" y="309" width="128.99999999999997" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Forgot Password"/>
                                 <connections>
                                     <action selector="forgotpasswordButtonTapped:" destination="4Lu-ll-NPr" eventType="touchUpInside" id="Z3L-0Y-J25"/>
@@ -2360,8 +2360,8 @@
         <image name="unchecked_checkbox" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qdz-QX-edx"/>
-        <segue reference="aKU-jz-WMr"/>
+        <segue reference="Zrk-cI-E47"/>
+        <segue reference="YbI-zK-ef6"/>
         <segue reference="70V-RF-gAw"/>
         <segue reference="u7M-6E-V14"/>
         <segue reference="Vbf-zF-n5t"/>

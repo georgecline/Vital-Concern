@@ -16,7 +16,7 @@ class AllReqsTableViewCell: UITableViewCell {
     
     //    @IBOutlet var lblname: UILabel!
     
-//    @IBOutlet var lblcapital: UILabel!
+//    @IBOutlet var lblcapital: UILabel!   --
     
     override func awakeFromNib() {
         super.awakeFromNib()

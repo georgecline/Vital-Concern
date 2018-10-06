@@ -41,7 +41,7 @@ class SetUpNewChurchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view....
         
         
                 setupcopyTextView.text = "This app is free to church members. Churches pay $25 per month to set up their private network at www.VitalConcern.com.  Members access their church network through the free app.  \n\nIf you want to become the administrator for your church's network, fill out the form below."

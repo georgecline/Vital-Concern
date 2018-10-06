@@ -3,7 +3,7 @@
 //  Vital Concern
 //
 //  Created by George Cline on 8/16/18.
-//  Copyright © 2018 Vital Concern. All rights reserved.
+//  Copyright © 2018 Vital Concern. All rights reserved....
 //
 
 import UIKit

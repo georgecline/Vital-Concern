@@ -27,7 +27,7 @@ class TryTheDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view....
         
         trythedemoTextView.text = "Try a simulated church network by logging into the demo with a password. \n\nOn Vital Concern, each church's information is  private among its members. You'll see real posts in the demo (names changed). You can safely test posting and editing, etc. No one else will see what you post. To get started, submit this form.  "
         

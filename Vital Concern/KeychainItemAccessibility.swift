@@ -34,6 +34,7 @@
 //    SOFTWARE.
 import Foundation
 
+
 protocol KeychainAttrRepresentable {
     var keychainAttrValue: CFString { get }
 }

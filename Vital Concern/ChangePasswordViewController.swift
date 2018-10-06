@@ -77,7 +77,7 @@ class ChangePasswordViewController: UIViewController {
         let myUrl = URL(string: "https://www.vitalconcern.com/ios/settings/mypassword.php")
         var request = URLRequest(url:myUrl!)
         
-        request.httpMethod = "POST"// Compose a query string
+        request.httpMethod = "POST"// Compose a query string...
         
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.setValue("multipart/form-data", forHTTPHeaderField: "Accept")
