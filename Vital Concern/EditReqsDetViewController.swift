@@ -292,7 +292,7 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
                     let oldemail = parseJSON["SendEmail"] as? String
                     
                     
-                    print("response string =\(oldrequestfor), \(oldissue), \(oldrelationship), \(oldaction), \(oldstatus), \(oldexpiration), \(olddetails), \(oldconcerntype), \(oldurgency), \(oldemail)")
+
 
                     
 
