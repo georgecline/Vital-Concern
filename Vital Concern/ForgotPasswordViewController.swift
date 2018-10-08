@@ -100,10 +100,15 @@ class ForgotPasswordViewController: UIViewController {
                     let resultmessage = parseJSON["toastmessage"] as? String
                
                     self.displayMessage(userMessage: "\(resultmessage!)")
-                    return
+                   
+                    
+
+                     return
                     
                     
 
+                    
+                    
                     
                     
                 } else {
@@ -123,7 +128,22 @@ class ForgotPasswordViewController: UIViewController {
         }
         
         
+        
+
+        
+        
+        
         task.resume()
+        
+        
+        DispatchQueue.main.async
+            {
+                let homePage = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let appDelegate = UIApplication.shared.delegate
+                appDelegate?.window??.rootViewController = homePage
+        }
+        
+        
     }
                     
                     
@@ -147,7 +167,8 @@ class ForgotPasswordViewController: UIViewController {
                     
                     
                     
-                    
+
+
                     
                     
     /*

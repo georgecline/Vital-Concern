@@ -42,8 +42,7 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
     var oldemail: String!
     
     
-    
-    
+
     
     
     private var datePicker: UIDatePicker?
@@ -133,7 +132,10 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
     
 
     
-    
+    let myPickerViewBackgroundColor = UIColor(red:0.96, green:0.89, blue:1.00, alpha:1.0)
+    let myDatePickerBackgroundColor = UIColor(red:0.88, green:0.94, blue:0.97, alpha:1.0)
+    let myconcerntypeBackgroundColor = UIColor(red:0.96, green:0.89, blue:1.00, alpha:1.0)
+    let myexpirationBackgroundColor = UIColor(red:0.88, green:0.94, blue:0.97, alpha:1.0)
     
     
     
@@ -148,8 +150,8 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         
         
-        
-        
+           concerntypeTextField.backgroundColor = myconcerntypeBackgroundColor
+        expirationTextField.backgroundColor = myexpirationBackgroundColor
         
    /*
         var textfieldSubject = subjectTextField.text
@@ -196,6 +198,9 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
         datePicker?.datePickerMode = .date
         datePicker?.addTarget(self, action: #selector(PostRequestViewController.dateChanged(datePicker:)), for: .valueChanged)
         
+        datePicker?.backgroundColor = myDatePickerBackgroundColor
+        
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PostRequestViewController.viewTapped(gestureRecognizer:)))
         
         expirationTextField.inputView = datePicker
@@ -206,6 +211,8 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        pickerView.backgroundColor = myPickerViewBackgroundColor
         
         concerntypeTextField.inputView = pickerView
         
@@ -292,7 +299,7 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
                     let oldemail = parseJSON["SendEmail"] as? String
                     
                     
-
+                    let formatexpiration = self.formattedDateFromString(dateString: "\(oldexpiration!)", withFormat: "yyyy-MM-dd")
 
                     
 
@@ -303,7 +310,7 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
                     self.relationshipTextField.text = oldrelationship
                     self.actionTextField.text = oldaction
                     self.statusTextField.text = oldstatus
-                    self.expirationTextField.text = oldexpiration
+                    self.expirationTextField.text = formatexpiration
                     self.detailsTextView.text = olddetails
                     }
  
@@ -608,14 +615,157 @@ class EditReqsDetViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     
     
+    @IBAction func deletethisrequestButtonTapped(_ sender: UIButton) {
+        
+        
+        
+        
+        
+        //Create Activity Indicator
+        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        
+        // Position Activity Indicator in the center of the main view
+        myActivityIndicator.center = view.center
+        
+        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
+        myActivityIndicator.hidesWhenStopped = false
+        
+        // Start Activity Indicator
+        myActivityIndicator.startAnimating()
+        
+        view.addSubview(myActivityIndicator)
+        
+        
+        
+
+        
+                        let doPost = "Delete"
+        
+        
+        
+        
+        // Send HTTP Request to perform login
+        let myUrl = URL(string: "https://www.vitalconcern.com/ios/deleterequest/index.php")
+        var request = URLRequest(url:myUrl!)
+        
+        request.httpMethod = "POST"// Compose a query string
+        
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.setValue("multipart/form-data", forHTTPHeaderField: "Accept")
+        
+        
+        let postString = "doPost=\(doPost)&usr_email=\(user_emailString!)&pwd=\(userPasswordString!)&requestid=\(strreqid)"
+        
+        print("Post String: \(postString)")
+        
+        
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        
+        let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+            
+            
+            //Added self. with myActivityIndicator due to error
+            self.removeActivityIndicator(activityIndicator: myActivityIndicator)
+            
+            if error != nil
+            {
+                self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
+                print("error=\(String(describing: error))")
+                
+
+                
+                return
+                
+                
+            }
+            
+            
+            
+            //Let's convert response sent from a server side code to an NSDictionary object:
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                
+                if let parseJSON = json {
+                    
+                    
+                    if parseJSON["errorMessageKey"] != nil
+                    {
+                        self.displayMessage(userMessage: parseJSON["errorMessage"] as! String)
+                        return
+                    }
+                    //let loginresult = parseJSON["request"] as? String
+                    
+                    // Now we can access values by their keys
+                    let message = parseJSON["Message"] as! String
+                    
+                    
+                    print("The message from VC server: \(String(describing: message))")
+                    
+                    
+                    
+                    if (message == "Your request was deleted successfully.")
+                    {
+                        // Display an Alert dialog with a friendly error message
+                        self.displayMessage(userMessage: "Your request was deleted successfully.")
+                        return
+                    }
+                    
+                    
+                    
+                    
+                } else {
+                    self.displayMessage(userMessage: "Your deletion request was not successful. Please try again.")
+                    
+                }
+                
+            }
+            catch
+            {
+                
+                self.removeActivityIndicator(activityIndicator: myActivityIndicator)
+                
+                //Display an Alert dialog with a friendly error message
+                self.displayMessage(userMessage: "Could not successfully perform this request. Please try again later")
+                print(error)
+            }
+        }
+        
+        
+        task.resume()
+        
+        DispatchQueue.main.async
+            {
+                let homePage = self.storyboard?.instantiateViewController(withIdentifier: "StartPageViewController") as! StartPageViewController
+                let appDelegate = UIApplication.shared.delegate
+                appDelegate?.window??.rootViewController = homePage
+        }
+        
+        
+        
+        
+        
+    }
     
     
     
     
     
-    
-    
-    
+    func formattedDateFromString(dateString: String, withFormat format: String) -> String? {
+        
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        if let date = inputFormatter.date(from: dateString) {
+            
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = format
+            
+            return outputFormatter.string(from: date)
+        }
+        
+        return nil
+    }
     
 
     

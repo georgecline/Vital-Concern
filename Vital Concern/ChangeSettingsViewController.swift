@@ -37,7 +37,7 @@ class ChangeSettingsViewController: UIViewController {
     let emailalertString: String! = KeychainWrapper.standard.string(forKey: "EmailAlerts")
     
     
-    
+/*
     override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
@@ -54,7 +54,8 @@ class ChangeSettingsViewController: UIViewController {
     emailalertSwitch.setOn(false, animated: false)
     }
     }
-    
+
+    */
     
     
     
@@ -100,6 +101,30 @@ class ChangeSettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        
+        
+        //    override func viewWillAppear(_ animated: Bool) {
+        //    super.viewWillAppear(animated)
+        
+        
+        if emaildailyreportString == "1" {
+            dailyreportSwitch.setOn(true, animated: false)
+        } else {
+            dailyreportSwitch.setOn(false, animated: false)
+        }
+        
+        if emailalertString == "1" {
+            emailalertSwitch.setOn(true, animated: false)
+        } else {
+            emailalertSwitch.setOn(false, animated: false)
+        }
+        //    }
+        
+        
+        
         
 
         

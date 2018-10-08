@@ -66,19 +66,30 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
 
     }
     
-   
+    
+    
+    let myPickerViewBackgroundColor = UIColor(red:0.96, green:0.89, blue:1.00, alpha:1.0)
+    let myDatePickerBackgroundColor = UIColor(red:0.88, green:0.94, blue:0.97, alpha:1.0)
+    let myconcerntypeBackgroundColor = UIColor(red:0.96, green:0.89, blue:1.00, alpha:1.0)
+    let myexpirationBackgroundColor = UIColor(red:0.88, green:0.94, blue:0.97, alpha:1.0)
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
-        
+
+        concerntypeTextField.backgroundColor = myconcerntypeBackgroundColor
+        expirationTextField.backgroundColor = myexpirationBackgroundColor
         
         // Do any additional setup after loading the view....
     
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
         datePicker?.addTarget(self, action: #selector(PostRequestViewController.dateChanged(datePicker:)), for: .valueChanged)
+        
+        
+        datePicker?.backgroundColor = myDatePickerBackgroundColor
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PostRequestViewController.viewTapped(gestureRecognizer:)))
         
@@ -92,6 +103,11 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
         pickerView.dataSource = self
         
         concerntypeTextField.inputView = pickerView
+        
+        
+        
+        pickerView.backgroundColor = myPickerViewBackgroundColor
+
     
 /*
     
@@ -390,7 +406,4 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
     }
  
  
-    
-    
-
 }

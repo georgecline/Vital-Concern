@@ -10,10 +10,18 @@ import UIKit
 
 class StartPageViewController: UIViewController {
 
+    @IBOutlet var congnameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         var user_emailString: String? = KeychainWrapper.standard.string(forKey: "user_email")
+        
+                var congnameString: String? = KeychainWrapper.standard.string(forKey: "congname")
+        
        // print("User Email Address: \(String(describing: user_emailString))");
         if (user_emailString == nil)
             
@@ -29,6 +37,9 @@ class StartPageViewController: UIViewController {
                     self.dismiss(animated: false, completion: nil)
         }
         }
+        
+        congnameLabel.text = congnameString
+        
         
  /*
         DispatchQueue.main.async
