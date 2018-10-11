@@ -32,6 +32,7 @@
 		926AE96D2164400700F9BDED /* EditReqsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */; };
 		926AE96F216447D300F9BDED /* EditReqsDetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */; };
 		926AE9712164497D00F9BDED /* EditReqsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */; };
+		92706A24216F87CB00E77B01 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92706A23216F87CB00E77B01 /* ContactUsViewController.swift */; };
 		92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2221402A9100CBBC89 /* KeychainWrapper.swift */; };
 		92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */; };
 		927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */; };
@@ -98,6 +99,7 @@
 		926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsTableViewController.swift; sourceTree = "<group>"; };
 		926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsDetViewController.swift; sourceTree = "<group>"; };
 		926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReqsTableViewCell.swift; sourceTree = "<group>"; };
+		92706A23216F87CB00E77B01 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		92774E2221402A9100CBBC89 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-back-arrow-48.png"; path = "../../../Downloads/icons8-back-arrow-48.png"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				926AE96C2164400700F9BDED /* EditReqsTableViewController.swift */,
 				926AE96E216447D300F9BDED /* EditReqsDetViewController.swift */,
 				926AE9702164497D00F9BDED /* EditReqsTableViewCell.swift */,
+				92706A23216F87CB00E77B01 /* ContactUsViewController.swift */,
 			);
 			path = "Vital Concern";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				9200F1A12143E27600E77A34 /* LogOutViewController.swift in Sources */,
 				92F8635321547AF800B5F361 /* SetUpNewChurchViewController.swift in Sources */,
 				3F0B283D21153A920012FA94 /* AppDelegate.swift in Sources */,
+				92706A24216F87CB00E77B01 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

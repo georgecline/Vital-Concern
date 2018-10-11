@@ -200,7 +200,7 @@ class SetUpNewChurchViewController: UIViewController {
                     
                     DispatchQueue.main.async
                         {
-                            let homePage = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! StartPageViewController
+                            let homePage = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                             let appDelegate = UIApplication.shared.delegate
                             appDelegate?.window??.rootViewController = homePage
                     }
