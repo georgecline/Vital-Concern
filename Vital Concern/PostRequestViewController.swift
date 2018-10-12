@@ -120,6 +120,9 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
     NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
         
+        
+
+       
          
     }
 
@@ -404,6 +407,12 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
         let contentInset:UIEdgeInsets = UIEdgeInsets.zero
         ui_scrollView.contentInset = contentInset
     }
+    
+    
+    
+
+    
+    
  
  
 }

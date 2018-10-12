@@ -8,10 +8,18 @@
 
 import UIKit
 
+
+
+
+
+
+
+
 class StartPageViewController: UIViewController {
 
     @IBOutlet var congnameLabel: UILabel!
     
+    @IBOutlet var ui_scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +48,9 @@ class StartPageViewController: UIViewController {
         
         congnameLabel.text = congnameString
         
+        congnameLabel.resignFirstResponder()
+        
+        
         
  /*
         DispatchQueue.main.async
@@ -54,6 +65,16 @@ class StartPageViewController: UIViewController {
         
         
         
+          self.hideKeyboardWhenTappedAround()
+        
+        
+        
+        
+        // setup keyboard event
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        
         
     }
 
@@ -64,7 +85,26 @@ class StartPageViewController: UIViewController {
     
 
 
+   
     
+    
+    
+    // KEYBOARD FUNCTIONS - WERE AFTER DIDRECEIVEMEMORYWARNING
+    @objc func keyboardWillShow(notification:NSNotification){
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        var contentInset:UIEdgeInsets = self.ui_scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        ui_scrollView.contentInset = contentInset
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification){
+        
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        ui_scrollView.contentInset = contentInset
+    }
 
     
     

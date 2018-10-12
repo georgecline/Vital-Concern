@@ -23,7 +23,8 @@ class ChangeSettingsViewController: UIViewController {
     var dailyreportState: String!
     var emailalertState: String!
     
-  
+    @IBOutlet var ui_scrollView: UIScrollView!
+    
     
     // Read values from keychain fields...
     
@@ -136,7 +137,9 @@ class ChangeSettingsViewController: UIViewController {
         print("emaildailyreportString: \(emaildailyreportString!)")
         print("emailalertstring: \(emailalertString!)")
         
-
+        // setup keyboard event
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     
     }
   
@@ -427,6 +430,22 @@ class ChangeSettingsViewController: UIViewController {
     
 
     
+    // KEYBOARD FUNCTIONS - WERE AFTER DIDRECEIVEMEMORYWARNING
+    @objc func keyboardWillShow(notification:NSNotification){
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        var contentInset:UIEdgeInsets = self.ui_scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        ui_scrollView.contentInset = contentInset
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification){
+        
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        ui_scrollView.contentInset = contentInset
+    }
     
     
     
