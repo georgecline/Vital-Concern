@@ -35,7 +35,6 @@
 		92706A24216F87CB00E77B01 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92706A23216F87CB00E77B01 /* ContactUsViewController.swift */; };
 		92774E2321402A9100CBBC89 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2221402A9100CBBC89 /* KeychainWrapper.swift */; };
 		92774E2521402F8300CBBC89 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */; };
-		927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */; };
 		928ED2E5215F0CF300163607 /* PostRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928ED2E4215F0CF300163607 /* PostRequestViewController.swift */; };
 		92B308BB214BB2C600A5E996 /* PrayerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */; };
 		92B308BD214BCC4E00A5E996 /* PrayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */; };
@@ -102,7 +101,6 @@
 		92706A23216F87CB00E77B01 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		92774E2221402A9100CBBC89 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		92774E2421402F8300CBBC89 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
-		927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-back-arrow-48.png"; path = "../../../Downloads/icons8-back-arrow-48.png"; sourceTree = "<group>"; };
 		928ED2E4215F0CF300163607 /* PostRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestViewController.swift; sourceTree = "<group>"; };
 		92B308BA214BB2C600A5E996 /* PrayerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewController.swift; sourceTree = "<group>"; };
 		92B308BC214BCC4E00A5E996 /* PrayerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				3F0B28C32125D7870012FA94 /* CheckBox.swift */,
 				3F0B284021153A920012FA94 /* Main.storyboard */,
 				3F0B284621153A980012FA94 /* Assets.xcassets */,
-				927ED6F12138B939008BF3DE /* icons8-back-arrow-48.png */,
 				3F955835212AF16700D75350 /* checked_checkbox.imageset */,
 				3F0B284821153A980012FA94 /* LaunchScreen.storyboard */,
 				3F0B284B21153A980012FA94 /* Info.plist */,
@@ -332,7 +329,6 @@
 				3F0B284A21153A980012FA94 /* LaunchScreen.storyboard in Resources */,
 				3F0B284721153A980012FA94 /* Assets.xcassets in Resources */,
 				3F0B284221153A920012FA94 /* Main.storyboard in Resources */,
-				927ED6F22138B939008BF3DE /* icons8-back-arrow-48.png in Resources */,
 				3F955836212AF16700D75350 /* checked_checkbox.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

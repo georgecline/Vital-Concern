@@ -176,7 +176,7 @@ class ChangePasswordViewController: UIViewController {
                     if (usermessage == "")
                     {
                     
-                        let saveuserPassword: Bool = KeychainWrapper.standard.set(changedpassword!, forKey: "userPassword")
+                        let _: Bool = KeychainWrapper.standard.set(changedpassword!, forKey: "userPassword")
                         
                         // Display an Alert dialog with a friendly error message
                         self.displayMessage(userMessage: "Your password was successfully updated.")

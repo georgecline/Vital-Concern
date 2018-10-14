@@ -106,7 +106,7 @@ struct jsonstruct:Decodable {
                   
                     
                 
-                for mainarr in self.arrdata{
+                for _ in self.arrdata{
         //            print(mainarr.requestfor,":",mainarr.Issue,":",mainarr.name)
                     DispatchQueue.main.async {
                         self.allreqsTableView.reloadData()

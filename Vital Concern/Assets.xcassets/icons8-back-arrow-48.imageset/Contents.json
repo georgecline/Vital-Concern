@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "NEWGRAPHcropWH.png",
+      "filename" : "icons8-back-arrow-48.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-back-arrow-48 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icons8-back-arrow-48 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

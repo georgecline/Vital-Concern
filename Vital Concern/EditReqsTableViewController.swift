@@ -84,7 +84,7 @@ class EditReqsTableViewController: UITableViewController {
                 print("response = \(response!)")
             }
             
-            let responseString = String(data: data!, encoding: .utf8)
+            let _ = String(data: data!, encoding: .utf8)
                 //      print("responseString = \(responseString!)")
             
             
@@ -101,7 +101,7 @@ class EditReqsTableViewController: UITableViewController {
                     
                     
                     
-                    for mainarr in self.arrdata{
+                    for _ in self.arrdata{
                     //        print(mainarr.requestfor,":",mainarr.Issue,":")
                         DispatchQueue.main.async {
                             self.editreqsTableView.reloadData()

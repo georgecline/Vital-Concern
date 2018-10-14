@@ -26,9 +26,9 @@ class StartPageViewController: UIViewController {
         
         
         
-        var user_emailString: String? = KeychainWrapper.standard.string(forKey: "user_email")
+        let user_emailString: String? = KeychainWrapper.standard.string(forKey: "user_email")
         
-                var congnameString: String? = KeychainWrapper.standard.string(forKey: "congname")
+                let congnameString: String? = KeychainWrapper.standard.string(forKey: "congname")
         
        // print("User Email Address: \(String(describing: user_emailString))");
         if (user_emailString == nil)
@@ -91,7 +91,7 @@ class StartPageViewController: UIViewController {
     
     // KEYBOARD FUNCTIONS - WERE AFTER DIDRECEIVEMEMORYWARNING
     @objc func keyboardWillShow(notification:NSNotification){
-        var userInfo = notification.userInfo!
+        let userInfo = notification.userInfo!
         var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         

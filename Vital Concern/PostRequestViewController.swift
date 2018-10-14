@@ -91,7 +91,7 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         datePicker?.backgroundColor = myDatePickerBackgroundColor
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PostRequestViewController.viewTapped(gestureRecognizer:)))
+        let _ = UITapGestureRecognizer(target: self, action: #selector(PostRequestViewController.viewTapped(gestureRecognizer:)))
         
         expirationTextField.inputView = datePicker
         
@@ -393,7 +393,7 @@ class PostRequestViewController: UIViewController, UIPickerViewDataSource, UIPic
 
     // KEYBOARD FUNCTIONS - WERE AFTER DIDRECEIVEMEMORYWARNING
     @objc func keyboardWillShow(notification:NSNotification){
-        var userInfo = notification.userInfo!
+        let userInfo = notification.userInfo!
         var keyboardFrame:CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         
